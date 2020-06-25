@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+  </head>
+  <body>
+    <h1>Registration form</h1>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" />
+      <br />
+      Gender: <br />
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label><br />
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br />
+      <label for="course">Course</label>
+      <select name="course" id="course">
+        <option value="python">Python</option>
+        <option value="data-science">Data Science</option>
+        <option value="machine-learning">Machine Learning</option>
+        <option value="web-development">Web Development</option>
+      </select>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
