@@ -9,18 +9,30 @@
       <label for="name">Name</label>
       <input type="text" name="name" id="name" />
       <br />
-      Gender: <br />
-      <input type="radio" id="male" name="gender" value="male" />
-      <label for="male">Male</label><br />
-      <input type="radio" id="female" name="gender" value="female" />
-      <label for="female">Female</label><br />
-      <label for="course">Course</label>
-      <select name="course" id="course">
-        <option value="python">Python</option>
-        <option value="data-science">Data Science</option>
-        <option value="machine-learning">Machine Learning</option>
-        <option value="web-development">Web Development</option>
-      </select>
+      <label for="phone-number">Phone number</label>
+      <input type="number" name="phone-number" id="phone-number" /><br />
+      Course: <br />
+      <input type="radio" id="masters" name="course" value="masters" />
+      <label for="masters">Masters</label><br />
+      <input type="radio" id="bachelors" name="course" value="bachelors" />
+      <label for="bachelors">Bachelors</label><br />
+      <label for="description">Description</label><br />
+      <textarea
+        name="description"
+        id="description"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br />
+      Subject Interests: <br />
+      <input type="checkbox" name="python" id="python" />
+      <label for="python">Python</label><br />
+      <input type="checkbox" name="web-development" id="web-development" />
+      <label for="web-development">Web Development</label><br />
+      <input type="checkbox" name="data-science" id="data-science" />
+      <label for="data-science">Data Science</label> <br />
+      <input type="checkbox" name="machine-learning" id="machine-learning" />
+      <label for="machine-learning">Machine Learning</label>
       <br />
       <input type="submit" value="Submit" />
     </form>
