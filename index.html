@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <div>
-    <h1>HTML</h1>
-    <p>
-      This is a basic HTML page.It contains a h1 tag and p paragraph tag. These
-      tags are read by web browsers and displays the information according to
-      the tag.
-    </p>
-  </div>
+  <head>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li><a href="./page1.html">Home</a></li>
+        <li><a href="./page2.html">Registration</a></li>
+        <li><a href="./index2.html"> Personal details</a></li>
+      </ul>
+      <h1>HTML</h1>
+      <p>
+        This is a basic HTML page.It contains a h1 tag and p paragraph tag.
+        These tags are read by web browsers and displays the information
+        according to the tag.
+      </p>
+    </div>
+  </body>
 </html>

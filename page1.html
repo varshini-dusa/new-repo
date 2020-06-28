@@ -2,6 +2,66 @@
 <html>
   <head>
     <title>Lists</title>
+    <style>
+      body {
+        background-color: aquamarine;
+        font-family: serif;
+        font-style: italic;
+      }
+      h1 {
+        color: brown;
+        font-size: larger;
+      }
+      /* unvisited link */
+      a:link {
+        color: red;
+      }
+
+      /* visited link */
+      a:visited {
+        color: green;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: hotpink;
+      }
+
+      /* selected link */
+      a:active {
+        color: blue;
+      }
+      ul.a {
+        list-style-position: outside;
+      }
+
+      ul.b {
+        list-style-position: inside;
+      }
+      ol {
+        background: #ff9999;
+        padding: 20px;
+      }
+
+      ul {
+        background: #3399ff;
+        padding: 20px;
+      }
+
+      ol li {
+        background: #ffe5e5;
+        padding: 5px;
+        margin-left: 35px;
+      }
+
+      ul li {
+        background: #cce5ff;
+        margin: 5px;
+      }
+      #hide {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <div>
@@ -9,16 +69,16 @@
       <ol>
         <li>
           Python
-          <ul>
+          <ul class="a">
             <li>Data types</li>
-            <li>Sets</li>
+            <li id="hide">Sets</li>
             <li>Tuples</li>
             <li>Dictionary</li>
           </ul>
         </li>
         <li>
           Machine Learning
-          <ul>
+          <ul class="b">
             <li>Linear Regression</li>
             <li>Logistic Regression</li>
             <li>Random forest</li>
@@ -26,14 +86,14 @@
         </li>
         <li>
           Data Science
-          <ul>
+          <ul class="a">
             <li>Data analysis</li>
             <li>Data visualisation</li>
           </ul>
         </li>
         <li>
           Web development
-          <ul>
+          <ul class="b">
             <li>HTML</li>
             <li>CSS</li>
             <li>SQL</li>
