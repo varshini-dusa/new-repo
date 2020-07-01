@@ -23,15 +23,25 @@
         color: blue;
       }
     </style>
+    <script src="./new.js" type="text/javascript"></script>
   </head>
   <body>
     <h1>Registration form</h1>
-    <form action="./page3.html" method="GET">
+    <form
+      name="myForm"
+      action="./page3.html"
+      method="GET"
+      onsubmit="return validateForm()"
+    >
       <label for="name">Name</label>
       <input type="text" name="name" id="name" />
       <br />
       <label for="phone-number">Phone number</label>
-      <input type="number" name="phone-number" id="phone-number" /><br />
+      <input
+        pattern="[1-9]{1}[0-9]{9}"
+        name="phone-number"
+        id="phone-number"
+      /><br />
       Course: <br />
       <input type="radio" id="masters" name="course" value="masters" />
       <label for="masters">Masters</label><br />
@@ -46,16 +56,16 @@
       ></textarea>
       <br />
       Subject Interests: <br />
-      <input type="checkbox" name="python" id="python" />
+      <input type="checkbox" name="subject" id="python" />
       <label for="python">Python</label><br />
-      <input type="checkbox" name="web-development" id="web-development" />
+      <input type="checkbox" name="subject" id="web-development" />
       <label for="web-development">Web Development</label><br />
-      <input type="checkbox" name="data-science" id="data-science" />
+      <input type="checkbox" name="subject" id="data-science" />
       <label for="data-science">Data Science</label> <br />
-      <input type="checkbox" name="machine-learning" id="machine-learning" />
+      <input type="checkbox" name="subject" id="machine-learning" />
       <label for="machine-learning">Machine Learning</label>
       <br />
-      <a href="./page3.html">Submit</a>
+      <input type="submit" value="Submit" />
     </form>
   </body>
 </html>

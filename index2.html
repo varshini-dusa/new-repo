@@ -60,7 +60,7 @@
       <h3><a href="./page1.html"> Computer Science and Engineering</a></h3>
     </div>
     <div>
-      <table>
+      <table id="tableData">
         <tr class="a">
           <td class="left">Subject</td>
           <td class="right">Score</td>
@@ -77,7 +77,23 @@
           <td class="left">FLAT</td>
           <td class="right">10</td>
         </tr>
+        <tr id="a1">
+          <td class="left">Average</td>
+          <td class="right" id="avg"></td>
+        </tr>
       </table>
     </div>
+    <script>
+      function avgCal() {
+        var avg = 0;
+        var table = document.getElementById("tableData");
+        for (var r = 1, n = table.rows.length; r < n; r++) {
+          avg = avg + Number(table.rows[r].cells[1].innerHTML);
+        }
+        return avg;
+      }
+
+      document.getElementById("avg").innerHTML = avgCal();
+    </script>
   </body>
 </html>
