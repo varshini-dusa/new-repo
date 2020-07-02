@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>File</title>
+    <!-- <input type="date" name="d" id="d" /> -->
+    <button onclick="document.getElementById('demo').innerHTML=Date()">
+      Time is?
+    </button>
+    <input type="number" name="num" id="num" />
+    <button onclick="check()">Click</button>
+    <p id="demo"></p>
+    <p id="desc">
+      HTML stands for Hyper Text Markup Language HTML is the standard markup
+      language for creating Web pages HTML describes the structure of a Web page
+      HTML consists of a series of elements HTML elements tell the browser how
+      to display the content HTML elements label pieces of content such as "this
+      is a heading", "this is a paragraph", "this is a link", etc.
+    </p>
+  </head>
+  <body>
+    <script>
+      var x = 3,
+        y = 4;
+      var arr = [1, 2, 3, 4, 5];
+      var k = String(arr[3]);
+      // console.log(Math.pow(2, 3), Math.sqrt(64), Math.abs(-4.7));
+      let z = Math.random();
+      // console.log(
+      //   z,
+      //   Math.ceil(z),
+      //   Math.round(z),
+      //   Math.floor(z),
+      //   Math.cos((0 * Math.PI) / 180)
+      // );
+      // console.log(document.getElementById("d").innerHTML);
+
+      // console.log(typeof k);
+      function check() {
+        let num = document.getElementById("num").value;
+        // console.log(num);
+        try {
+          if (num > 10 && num < 100)
+            console.log("The number is between 10 and 100");
+          else {
+            console.log("The number is not in range!");
+            throw "not in range";
+          }
+          var a = 1;
+          var b = 1;
+          var k;
+          console.log(a, b);
+          while (a + b <= num) {
+            k = a + b;
+            console.log(k);
+            a = b;
+            b = k;
+          }
+        } catch (err) {
+          console.log("Cant generate fibonacci series");
+        }
+        var para = document.getElementById("desc").innerHTML;
+        var k = para.trim().split(" ");
+        console.log(k[4], k[6], k[9]);
+      }
+    </script>
+  </body>
+</html>
