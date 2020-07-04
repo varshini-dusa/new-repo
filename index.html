@@ -39,6 +39,7 @@
         <li><a href="./index2.html"> Personal details</a></li>
       </ul>
       <h1 id="clickme">HTML</h1>
+      <button>Click to hide() and show() the above div</button>
       <p id="book">
         This is a basic HTML page.It contains a h1 tag and p paragraph tag.
         These tags are read by web browsers and displays the information
@@ -51,6 +52,11 @@
       $("#clickme").click(function () {
         $("#book").hide("slow", function () {
           alert("Animation complete.");
+        });
+      });
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#clickme").toggle();
         });
       });
     </script>
